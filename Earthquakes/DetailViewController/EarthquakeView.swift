@@ -31,8 +31,6 @@ class EarthquakeView: UIView {
     
     // MARK: Private functions
     private func prepareSubviews() {
-        translatesAutoresizingMaskIntoConstraints = false
-        
         stackView.addArrangedSubview(map)
         map.translatesAutoresizingMaskIntoConstraints = false
         map.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 1).isActive = true
